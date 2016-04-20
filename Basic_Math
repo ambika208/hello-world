@@ -1,0 +1,9 @@
+#Basic math using PEMDAS and printing the results
+#Two types of numbers are ints and floats
+#Create variables called assignment statements
+
+no_shoes = 74
+no_shoes_bags = 2
+max_bags_person = 4
+People_carry_bags = (no_shoes / no_shoes_bags) / max_bags_person
+print People_carry_bags
