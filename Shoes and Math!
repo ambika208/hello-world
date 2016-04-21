@@ -1,0 +1,51 @@
+#Basic math using PEMDAS and printing the results
+#Two types of numbers are ints and floats
+#Create variables called assignment statements
+
+First_name = "Ambika"
+Last_name = "Shetty"
+Name = First_name + " " + Last_name
+
+
+no_racks = 15
+no_shoes_per_rack = 5
+total_shoes = no_racks * no_shoes_per_rack
+
+sentnence = Name + " owns " + str(total_shoes) + " shoes "
+print sentnence 
+
+
+shoe1 = "\n\t Wedge Heels"
+shoe2 = "\n\t Platform Heels"
+print 'Shoes needed:',shoe1,shoe2
+
+favourite_shoe = "Sperry Spider Top Sneakers!"
+favourite_shoe[0]
+favourite_shoe[6]
+print 'String length of my favourite shoe is',len(favourite_shoe)
+print 'Trying some slicing here guys and this was I have!!... ',favourite_shoe[2:5]
+
+#Formula for slicing is [start:end+1]
+
+part1 = favourite_shoe[0:6]
+part2 = favourite_shoe[18:]
+
+print part1,part2
+
+#6 Comparison statements. Let's buy some shoes!
+
+prices = []
+for i in [0,1,2,3]:
+	x = int(raw_input("\nGimme a price " +str(i+1) + "\n" ))
+	prices.append(x)
+
+for cost in prices:	
+	if (cost > 0 and cost < 25):
+		print "OK. Let's do this!"
+	elif cost==25:
+		print "Hmm, they do look really pretty! Should I...?"
+	elif cost > 25:
+		print "Oh hell no!"
+	else: 
+		print "Imma keep looking"
+print prices
